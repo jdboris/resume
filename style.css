@@ -246,7 +246,7 @@ h3.has-subtext {
 }
 
 .skills-lists-section > main > section {
-  flex-basis: calc(123px - 0.5em);
+  flex-basis: calc(133px - 0.5em);
   flex-grow: 1;
 }
 
@@ -351,7 +351,7 @@ meter::-webkit-meter-even-less-good-value {
 
 .portfolio-section > main > * {
   flex-grow: 1;
-  flex-basis: 187px;
+  flex-basis: 200px;
   padding: 4px;
 }
 
