@@ -148,7 +148,7 @@ blockquote p {
 .wrapper > header {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  row-gap: 2em;
   align-items: center;
 }
 
@@ -419,7 +419,6 @@ meter::-webkit-meter-even-less-good-value {
   border-radius: 50%;
   height: 150px;
   margin: auto;
-  margin-top: 1.5em;
 }
 
 .print-button {
