@@ -74,6 +74,7 @@ h2 {
   position: relative;
   border-bottom: 3px solid #073763ff;
   padding-top: 15px;
+  margin: 0;
 }
 
 h2 small {
@@ -235,7 +236,7 @@ h3.has-subtext {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  flex-basis: calc(40% - 0.5em);
+  /* flex-basis: calc(40% - 0.5em); */
   min-width: 95px;
 }
 
@@ -339,7 +340,7 @@ meter::-webkit-meter-even-less-good-value {
 }
 
 .portfolio-section {
-  flex-basis: calc(60% - 0.5em);
+  /* flex-basis: calc(60% - 0.5em); */
   flex-grow: 1;
 }
 
@@ -347,11 +348,10 @@ meter::-webkit-meter-even-less-good-value {
   display: flex;
   flex-wrap: wrap;
   padding-top: 1em;
+  flex-direction: column;
 }
 
 .portfolio-section > main > * {
-  flex-grow: 1;
-  flex-basis: 200px;
   padding: 4px;
 }
 
@@ -469,7 +469,7 @@ meter::-webkit-meter-even-less-good-value {
     display: none !important;
   }
 
-  #work-experience-heading {
+  .page-break {
     page-break-before: always;
     margin-top: 0px;
   }
