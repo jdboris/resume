@@ -382,31 +382,35 @@
                 .join("");
             </script>
 
-            <section class="cloud-skills">
-              <header><h3>Cloud</h3></header>
+            <section class="other-skills-1">
+              <header><h3>Other</h3></header>
             </section>
             <script>
-              document.querySelector(".cloud-skills").innerHTML += [
+              document.querySelector(".other-skills-1").innerHTML += [
                 { name: "GCP", value: 4 },
                 { name: "Firebase", value: 4 },
+                { name: "Stripe API", value: 4 },
+                { name: "Square API", value: 4 },
+                { name: "Security", value: 5 },
+                { name: "Git / GitHub", value: 4 },
+                { name: "GitHub Actions", value: 2 },
               ]
                 .map((skill) => labelHtml(skill))
                 .join("");
             </script>
 
-            <section class="other-skills">
-              <header><h3>Other</h3></header>
+            <section class="other-skills-2">
+              <header><h3></h3></header>
             </section>
             <script>
-              document.querySelector(".other-skills").innerHTML += [
-                { name: "Security", value: 5 },
-                { name: "Git / GitHub", value: 4 },
-                { name: "GitHub Actions", value: 2 },
+              document.querySelector(".other-skills-2").innerHTML += [
+                { name: "Webpack", value: 4 },
                 { name: "Java", value: 3 },
                 { name: "C#", value: 2 },
                 { name: "C++", value: 2 },
                 { name: "Godot / GDScript", value: 4 },
                 { name: "Python", value: 2 },
+                { name: "VS Code", value: 5 },
               ]
                 .map((skill) => labelHtml(skill))
                 .join("");

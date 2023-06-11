@@ -251,6 +251,11 @@ h3.has-subtext {
   flex-grow: 1;
 }
 
+.skills-lists-section > main > section > header {
+  display: flex;
+  height: 50px;
+}
+
 .skills-lists-section label {
   display: flex;
   flex-direction: column;
