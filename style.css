@@ -478,4 +478,8 @@ meter::-webkit-meter-even-less-good-value {
     page-break-before: always;
     margin-top: 0px;
   }
+
+  .print-button {
+    display: none;
+  }
 }
