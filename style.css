@@ -37,12 +37,34 @@ a {
   font-weight: bold;
 }
 
+nav {
+  display: inline-flex;
+  column-gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  flex-basis: 190px;
+  flex-grow: 1;
+  row-gap: 0.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 nav a,
 nav span {
   white-space: nowrap;
+  min-width: 130px;
+  row-gap: 0.2em;
 }
 
-nav > *::after,
+nav > span {
+  display: inline-flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  justify-content: center;
+}
+
+/* nav > *::after,
 nav a::after,
 nav span::after {
   content: "";
@@ -51,7 +73,7 @@ nav span::after {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0.5em;
-}
+} */
 
 nav > *:last-child::after,
 nav a:last-child::after,
@@ -91,6 +113,14 @@ footer {
 address {
   display: inline;
   font-style: normal;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 2em;
 }
 
 .portfolio-section ul {
@@ -118,6 +148,7 @@ blockquote {
   font-style: italic;
   opacity: 0.9;
   quotes: "\201C""\201D""\2018""\2019";
+  padding-top: 1.1em;
 }
 
 blockquote:before {
@@ -125,7 +156,6 @@ blockquote:before {
   content: open-quote;
   font-size: 4em;
   line-height: 0em;
-  margin-right: 0.25em;
   vertical-align: -0.4em;
 }
 
@@ -149,7 +179,6 @@ blockquote p {
 .wrapper > header {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 2em;
   column-gap: 1.5em;
   align-items: center;
 }
@@ -159,12 +188,13 @@ blockquote p {
 }
 
 .wrapper > header > div {
-  flex-basis: 50%;
-  flex-grow: 1;
+  flex-basis: 0;
+  flex-grow: 3.4;
 }
 
 .wrapper > header p {
   font-size: 1.1em;
+  margin-bottom: 0;
 }
 
 .nowrap {
@@ -174,6 +204,7 @@ blockquote p {
 .row {
   display: flex;
   column-gap: 1em;
+  flex-wrap: wrap;
 }
 
 .icon {
@@ -232,11 +263,17 @@ h3.has-subtext {
   gap: 1em;
 }
 
+.experience-section {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
 .skills-lists-section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* flex-basis: calc(40% - 0.5em); */
+  flex-basis: 112px;
+  flex-grow: 1;
   min-width: 95px;
 }
 
@@ -247,7 +284,7 @@ h3.has-subtext {
 }
 
 .skills-lists-section > main > section {
-  flex-basis: calc(133px - 0.5em);
+  flex-basis: calc(125px - 0.5em);
   flex-grow: 1;
 }
 
@@ -353,7 +390,7 @@ meter::-webkit-meter-even-less-good-value {
   display: flex;
   flex-wrap: wrap;
   padding-top: 1em;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .portfolio-section > main > * {
@@ -374,6 +411,8 @@ meter::-webkit-meter-even-less-good-value {
 
 .portfolio-section a {
   color: initial;
+  flex-basis: 200px;
+  flex-grow: 1;
 }
 
 .portfolio-section > main > * > img {
