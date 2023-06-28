@@ -274,6 +274,7 @@
             <section class="other-skills-2"></section>
             <script>
               document.querySelector(".other-skills-2").innerHTML += [
+                { name: "DevOps", value: 2 },
                 { name: "CI / CD", value: 2 },
                 { name: "Webpack", value: 4 },
                 { name: "Java", value: 3 },
@@ -281,7 +282,6 @@
                 { name: "C++", value: 2 },
                 { name: "Godot / GDScript", value: 4 },
                 { name: "Python", value: 2 },
-                { name: "VS Code", value: 5 },
               ]
                 .map((skill) => labelHtml(skill))
                 .join("");
