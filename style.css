@@ -9,12 +9,13 @@ html {
 }
 
 body {
-  font-family: "Finlandica", sans-serif;
-  font-size: 1.05em;
+  font-family: "Calibri", sans-serif;
+  font-size: 12pt;
   background-color: rgb(241, 242, 245);
   width: 100%;
   margin: 0px;
   padding: 0px;
+  letter-spacing: 0.01em;
 }
 
 body > main {
@@ -41,17 +42,12 @@ a[href="https://josephboris.com"]
 {
   font-size: 1.7em;
   width: 100%;
-  text-align: center;
 }
 
 nav {
   display: inline-flex;
   column-gap: 1em;
   flex-wrap: wrap;
-  justify-content: center;
-
-  flex-basis: 190px;
-  flex-grow: 1;
   row-gap: 0.2em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -95,6 +91,7 @@ figcaption {
 }
 
 h1 {
+  line-height: 1;
   font-size: 2.75em;
   margin: 0;
 }
@@ -118,16 +115,24 @@ footer {
 }
 
 address {
-  display: inline;
+  display: inline-flex;
   font-style: normal;
   margin-bottom: 1em;
   text-align: center;
+  gap: 1em;
+  margin-top: 0.6em;
+  flex-wrap: wrap;
+  flex-basis: 0;
+  justify-content: center;
 }
 
 ul {
   margin: 0;
-  padding: 0;
-  padding-left: 2em;
+}
+
+ul li > i {
+  font-size: 0.7em;
+  margin-right: 0.5em;
 }
 
 .portfolio-section ul {
@@ -196,7 +201,7 @@ blockquote p {
 
 .wrapper > header > div {
   flex-basis: 0;
-  flex-grow: 3.4;
+  flex-grow: 5.4;
 }
 
 .wrapper > header p {
@@ -271,14 +276,13 @@ h3.has-subtext {
 }
 
 .experience-section {
-  flex-basis: 300px;
+  flex-basis: 370px;
   flex-grow: 1;
 }
 
 .skills-lists-section {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   flex-basis: 112px;
   flex-grow: 1;
   min-width: 95px;
@@ -292,8 +296,12 @@ h3.has-subtext {
   padding-top: 1.3em;
 }
 
+.skills-lists-section h4 {
+  margin: 0.6em 0;
+}
+
 .skills-lists-section > main > section {
-  flex-basis: calc(125px - 0.5em);
+  flex-basis: calc(113px - 0.5em);
   flex-grow: 1;
 }
 
@@ -502,10 +510,6 @@ meter::-webkit-meter-even-less-good-value {
   h1 {
     text-align: center;
   }
-}
-
-@page {
-  margin: 15mm;
 }
 
 @media print {

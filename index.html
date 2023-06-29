@@ -45,26 +45,9 @@
             </em>
           </h1>
 
-          <p>
-            Creative, industrious software developer with 10 years of experience
-            in code. Obsessed with productivity, and excited for my next
-            opportunity to develop effective software solutions.
-          </p>
-        </div>
+          <em>Full Stack Developer</em>
 
-        <nav>
-          <address>
-            <div>7330 Eagle Creek Rd</div>
-            <div>Cincinnati, OH 45247</div>
-          </address>
-
-          <address>
-            <div>+1 (769) 287-0593</div>
-
-            <div>josephdboris@gmail.com</div>
-          </address>
-
-          <span>
+          <nav>
             <a href="https://josephboris.com" target="_blank">
               josephboris.com
             </a>
@@ -78,121 +61,22 @@
             >
               wyzant.com/Tutors/LearnCode
             </a>
-          </span>
-        </nav>
+          </nav>
+        </div>
+
+        <address>
+          <div>
+            <div>7330 Eagle Creek Rd</div>
+            <div>Cincinnati, OH 45247</div>
+          </div>
+          <div>
+            <div>+1 (769) 287-0593</div>
+            <div>josephdboris@gmail.com</div>
+          </div>
+        </address>
       </header>
 
       <div class="row">
-        <section class="experience-section">
-          <h2 id="word-experience-heading">WORK EXPERIENCE</h2>
-
-          <h3 class="has-subtext">Full-Stack Engineer</h3>
-          <div class="subtext">
-            <a href="https://hololounge.jp" target="_blank">
-              Ougetsu Co., Ltd.
-            </a>
-            <span class="nowrap">(2022 - 2023)</span>
-          </div>
-
-          <ul>
-            <li>
-              Responsible for design, development, testing, deployment, and
-              integration.
-            </li>
-            <li>
-              Created a booking app, POS software, product gallery, custom CMS,
-              business website, and more.
-            </li>
-            <li>
-              <strong>Saved the company $20,000+</strong> on additional software
-              by powering several devices with one PWA.
-            </li>
-            <li>
-              <strong>Reduced operating expenses by 50%</strong> by automating
-              many tasks.
-            </li>
-            <li>
-              Helped drive sales with graphic design, marketing, and interior
-              design.
-            </li>
-          </ul>
-
-          <h3 class="has-subtext">Full-Stack Developer</h3>
-          <div class="subtext">
-            <a href="https://gameheretics.com" target="_blank">
-              Game Heretics Studios
-            </a>
-            <span class="nowrap">(2021 - 2022)</span>
-          </div>
-
-          <ul>
-            <li>
-              Responsible for design, development, testing, and deployment.
-            </li>
-            <li>Created a landing page, blog outlet, and custom CMS.</li>
-          </ul>
-
-          <h3 class="has-subtext">Full-Stack Developer</h3>
-          <div class="subtext">
-            <a
-              href="https://tabelog.com/en/tokyo/A1318/A131802/13253773"
-              target="_blank"
-            >
-              Ougetsu Co., Ltd.
-            </a>
-            <span class="nowrap">(2020 - 2021)</span>
-          </div>
-
-          <ul>
-            <li>
-              Responsible for design, development, testing, and deployment.
-            </li>
-            <li>Created a work shift scheduling solution.</li>
-            <li><strong>Reduced time spent on some tasks by 80%</strong>.</li>
-          </ul>
-
-          <h3 class="has-subtext">Freelance Web Developer</h3>
-          <div class="subtext"><em>Various Platforms</em> (2013 - Present)</div>
-
-          <ul>
-            <li>
-              Designed, developed, tested, and deployed web apps for businesses.
-            </li>
-          </ul>
-
-          <h3 class="has-subtext">Computer Science Tutor</h3>
-          <div class="subtext">
-            <em>Various Platforms</em> (2013 - 2017) |
-            <a
-              href="https://www.wyzant.com/Tutors/OH/Cincinnati/8048410"
-              target="_blank"
-            >
-              Wyzant.com
-            </a>
-            <span class="nowrap">(2017 - Present)</span>
-          </div>
-
-          <ul>
-            <li>Design software development curriculums from scratch.</li>
-            <li>Create projects and exercises for practice.</li>
-            <li>
-              Earned a
-              <strong>5-star average rating (with 750+ ratings).</strong>
-            </li>
-            <li>Students achieve job placement.</li>
-          </ul>
-          <blockquote>
-            <p>
-              I have used Wyzant many times over the past two years. Every tutor
-              has been good but Joseph is by far the best. He is very patient
-              and really helps you understand difficult concepts in a simple and
-              easy way. I definitely highly recommend him.
-            </p>
-
-            <div class="blockquote-source"><em>-Brenda</em></div>
-          </blockquote>
-        </section>
-
         <section class="skills-lists-section">
           <header>
             <h2>SKILLS</h2>
@@ -221,72 +105,204 @@
               `;
               }
             </script>
-            <section class="front-end-skills"></section>
+            <section class="skills-1"></section>
             <script>
-              document.querySelector(".front-end-skills").innerHTML += [
-                { name: "JavaScript", value: 5 },
-                { name: "TypeScript", value: 1 },
-                { name: "CSS / SASS", value: 5 },
-                { name: "React", value: 5 },
-                { name: "REST APIs", value: 5 },
-                { name: "Storybook", value: 4 },
-                { name: "Electron", value: 1 },
-                { name: "PWA", value: 4 },
-                { name: "Web Components", value: 4 },
-              ]
-                .map((skill) => labelHtml(skill))
-                .join("");
+              document.querySelector(".skills-1").innerHTML +=
+                `<h4>Languages</h4>` +
+                [
+                  { name: "JavaScript", value: 5 },
+                  { name: "TypeScript", value: 1 },
+                  { name: "CSS / SASS", value: 5 },
+                  { name: "SQL", value: 4 },
+                  { name: "NoSQL", value: 4 },
+                  { name: "PHP", value: 5 },
+                  { name: "Java", value: 3 },
+                  { name: "C#", value: 2 },
+                  { name: "C++", value: 2 },
+                  { name: "Python", value: 2 },
+                ]
+                  .map((skill) => labelHtml(skill))
+                  .join("");
+
+              document.querySelector(".skills-1").innerHTML +=
+                `<h4>Cloud</h4>` +
+                [
+                  { name: "GCP", value: 4 },
+                  { name: "Firebase", value: 4 },
+                  { name: "Azure", value: 1 },
+                ]
+                  .map((skill) => labelHtml(skill))
+                  .join("");
             </script>
 
-            <section class="back-end-skills"></section>
+            <section class="skills-2"></section>
             <script>
-              document.querySelector(".back-end-skills").innerHTML += [
-                { name: "Node.js", value: 5 },
-                { name: "Express.js", value: 4 },
-                { name: "SQL", value: 4 },
-                { name: "Mongoose", value: 4 },
-                { name: "Docker", value: 3 },
-                { name: "Sequelize", value: 4 },
-                { name: "PHP", value: 5 },
-                { name: ".NET Core", value: 3 },
-                { name: "GraphQL", value: 1 },
-              ]
-                .map((skill) => labelHtml(skill))
-                .join("");
-            </script>
+              document.querySelector(".skills-2").innerHTML +=
+                `<h4>Technologies</h4>` +
+                [
+                  { name: "React", value: 5 },
+                  { name: "Node.js", value: 5 },
+                  { name: "Express.js", value: 4 },
+                  { name: "REST APIs", value: 5 },
+                  { name: "Webpack", value: 4 },
+                  { name: "PWA", value: 4 },
+                  { name: "MongoDB", value: 2 },
+                  { name: "Sequelize", value: 4 },
+                  { name: "Docker", value: 3 },
+                  { name: ".NET Core", value: 3 },
+                  { name: "GraphQL", value: 1 },
+                ]
+                  .map((skill) => labelHtml(skill))
+                  .join("");
 
-            <section class="other-skills-1"></section>
-            <script>
-              document.querySelector(".other-skills-1").innerHTML += [
-                { name: "Cloud Services", value: 4 },
-                { name: "GCP", value: 4 },
-                { name: "Firebase", value: 4 },
-                { name: "Azure", value: 1 },
-                { name: "Stripe API", value: 4 },
-                { name: "Square API", value: 4 },
-                { name: "Security", value: 5 },
-                { name: "Git / GitHub", value: 4 },
-              ]
-                .map((skill) => labelHtml(skill))
-                .join("");
-            </script>
-
-            <section class="other-skills-2"></section>
-            <script>
-              document.querySelector(".other-skills-2").innerHTML += [
-                { name: "DevOps", value: 2 },
-                { name: "CI / CD", value: 2 },
-                { name: "Webpack", value: 4 },
-                { name: "Java", value: 3 },
-                { name: "C#", value: 2 },
-                { name: "C++", value: 2 },
-                { name: "Godot / GDScript", value: 4 },
-                { name: "Python", value: 2 },
-              ]
-                .map((skill) => labelHtml(skill))
-                .join("");
+              document.querySelector(".skills-2").innerHTML +=
+                `<h4>Other</h4>` +
+                [
+                  { name: "Visual Studio", value: 4 },
+                  { name: "Security", value: 5 },
+                  { name: "Git / GitHub", value: 4 },
+                  { name: "DevOps", value: 2 },
+                  { name: "CI/CD", value: 2 },
+                  { name: "Godot", value: 4 },
+                ]
+                  .map((skill) => labelHtml(skill))
+                  .join("");
             </script>
           </main>
+        </section>
+        <section class="experience-section">
+          <h2 id="word-experience-heading">WORK EXPERIENCE</h2>
+
+          <h3 class="has-subtext">Full Stack Engineer</h3>
+          <div class="subtext">
+            <a href="https://hololounge.jp" target="_blank">
+              Ougetsu Co., Ltd.
+            </a>
+            <span class="nowrap">(2022 - 2023)</span>
+          </div>
+
+          <ul>
+            <li>
+              <span>
+                Responsible for design, development, testing, deployment, and
+                integration.
+              </span>
+            </li>
+            <li>
+              <span>
+                Created a booking app, POS software, product gallery, custom
+                CMS, business website, and more.
+              </span>
+            </li>
+            <li>
+              <span>
+                <strong>Saved the company $20,000+</strong> on additional
+                software by powering several devices with one PWA.
+              </span>
+            </li>
+            <li>
+              <span>
+                <strong>Reduced operating expenses by 50%</strong> by automating
+                many tasks.
+              </span>
+            </li>
+            <li>
+              <span>
+                Helped drive sales with graphic design, marketing, and interior
+                design.
+              </span>
+            </li>
+          </ul>
+
+          <h3 class="has-subtext">Full Stack Developer</h3>
+          <div class="subtext">
+            <a href="https://gameheretics.com" target="_blank">
+              Game Heretics Studios
+            </a>
+            <span class="nowrap">(2021 - 2022)</span>
+          </div>
+
+          <ul>
+            <li>
+              <span>
+                Responsible for design, development, testing, and deployment.
+              </span>
+            </li>
+            <li>
+              <span>
+                Created a landing page, blog outlet, and custom CMS.
+              </span>
+            </li>
+          </ul>
+
+          <h3 class="has-subtext">Full Stack Developer</h3>
+          <div class="subtext">
+            <a
+              href="https://tabelog.com/en/tokyo/A1318/A131802/13253773"
+              target="_blank"
+            >
+              Ougetsu Co., Ltd.
+            </a>
+            <span class="nowrap">(2020 - 2021)</span>
+          </div>
+
+          <ul>
+            <li>
+              <span>
+                Responsible for design, development, testing, and deployment.
+              </span>
+            </li>
+            <li>
+              <span> Created a work shift scheduling solution. </span>
+            </li>
+            <li>
+              <span>
+                <strong>Reduced time spent on some tasks by 80%</strong>.
+              </span>
+            </li>
+          </ul>
+
+          <h3 class="has-subtext">Freelance Web Developer</h3>
+          <div class="subtext"><em>Various Platforms</em> (2013 - Present)</div>
+
+          <ul>
+            <li>
+              <span>
+                Designed, developed, tested, and deployed web apps for
+                businesses.
+              </span>
+            </li>
+          </ul>
+
+          <h3 class="has-subtext">Computer Science Tutor</h3>
+          <div class="subtext">
+            <em>Various Platforms</em> (2013 - 2017) |
+            <a
+              href="https://www.wyzant.com/Tutors/OH/Cincinnati/8048410"
+              target="_blank"
+            >
+              Wyzant.com
+            </a>
+            <span class="nowrap">(2017 - Present)</span>
+          </div>
+
+          <ul>
+            <li>
+              <span>Design software development curriculums from scratch.</span>
+            </li>
+            <li>
+              <span> Create projects and exercises for practice. </span>
+            </li>
+            <li>
+              <span>
+                Earned a
+                <strong>5-star average rating (with 750+ ratings).</strong>
+              </span>
+            </li>
+            <li>
+              <span>Students achieve job placement. </span>
+            </li>
+          </ul>
         </section>
       </div>
 
@@ -311,7 +327,7 @@
             <ul>
               <li class="badge">React</li>
               <li class="badge">GCP</li>
-              <li class="badge">Express</li>
+              <li class="badge">Express.js</li>
               <li class="badge">Sequelize</li>
               <li class="badge">SASS</li>
               <li class="badge">Square API</li>
