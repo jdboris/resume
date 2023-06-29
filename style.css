@@ -55,7 +55,6 @@ nav {
 nav a,
 nav span {
   white-space: nowrap;
-  min-width: 130px;
   row-gap: 0.2em;
 }
 
